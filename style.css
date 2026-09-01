@@ -686,21 +686,15 @@ tr.highlight-barca {
 }
 
 footer {
-  position: relative !important;
-  clear: both !important;
-  width: 100% !important;
-  height: auto !important;
-  min-height: initial !important;
-  padding: 20px !important;
-  background-color: #070e1b !important;
-  text-align: center !important;
-  margin-top: 50px !important;
-  z-index: 10 !important;
+  width: 100%;
+  padding: 20px 0;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .disclaimer-text {
-  font-size: 11px !important;
-  color: #718096 !important;
-  margin: 0 !important;
-  line-height: 1.5 !important;
+  font-size: 11px;
+  color: #718096;
+  margin: 0;
 }
