@@ -320,134 +320,46 @@ body {
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.1);
 
-  background-image:
-    linear-gradient(
-      rgba(7, 7, 9, 0.70),
-      rgba(7, 7, 9, 0.70)
-    ),
-    url("Picsart_26-09-01_22-29-45-429.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #070709;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-/* Efek warna Barcelona di atas foto */
-
+/* FOTO DI BELAKANG TULISAN */
 .hero-banner::after {
   content: "";
 
   position: absolute;
   inset: 0;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 77, 152, 0.16),
-      transparent 45%,
-      rgba(165, 0, 68, 0.16)
-    );
+  background-image: url("Picsart_26-09-01_22-29-45-429.jpg");
+  background-size: cover;
+  background-position: center;
 
-  pointer-events: none;
+  opacity: 0.28;
+
+  z-index: 0;
 }
 
-/* Garis atas */
-
+/* Lapisan gelap agar foto lebih samar */
 .hero-banner::before {
   content: "";
 
   position: absolute;
+  inset: 0;
 
-  top: 0;
-  left: 0;
-  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 7, 9, 0.25),
+    rgba(7, 7, 9, 0.75)
+  );
 
-  height: 3px;
-
-  background: var(--blaugrana-border);
-
-  border-radius:
-    var(--radius-lg)
-    var(--radius-lg)
-    0
-    0;
-
-  z-index: 3;
+  z-index: 1;
 }
 
-/* Pastikan tulisan berada di depan background */
-
+/* TULISAN DI DEPAN FOTO */
 .hero-content {
   position: relative;
-  z-index: 4;
-
-  max-width: 700px;
+  z-index: 2;
 }
-
-.hero-badge {
-  display: inline-block;
-
-  color: var(--barca-gold);
-
-  border: 1px solid var(--border-gold);
-
-  padding: 4px 12px;
-
-  border-radius: 20px;
-
-  font-size: 0.7rem;
-  font-weight: 600;
-
-  letter-spacing: 1.5px;
-
-  text-transform: uppercase;
-
-  background: rgba(7, 7, 9, 0.7);
-
-  backdrop-filter: blur(8px);
-}
-
-.hero-content h1 {
-  font-size: 2.6rem;
-
-  font-weight: 700;
-
-  margin: 16px 0 12px 0;
-
-  letter-spacing: -0.5px;
-
-  line-height: 1.2;
-
-  text-shadow:
-    0 3px 15px rgba(0, 0, 0, 0.7);
-}
-
-.hero-description {
-  color: #d4d9e2;
-
-  max-width: 520px;
-
-  line-height: 1.6;
-
-  font-size: 0.9rem;
-
-  text-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  margin-top: 24px;
-}
-
 /* --------------------------------------------------
    BUTTONS
 -------------------------------------------------- */
