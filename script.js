@@ -2,8 +2,8 @@
 const matchData = [
   {
     id: "m1",
-    date: "27 Agu 2026",
-    competition: "La Liga (Pekan 2)",
+    date: "24 Agu 2026",
+    competition: "La Liga (Pekan 1)",
     match: "Elche CF vs FC Barcelona",
     score: "0 - 5",
     result: "Menang",
@@ -15,8 +15,8 @@ const matchData = [
   },
   {
     id: "m2",
-    date: "23 Agu 2026",
-    competition: "La Liga (Pekan 1)",
+    date: "28 Agu 2026",
+    competition: "La Liga (Pekan 2)",
     match: "FC Barcelona vs Athletic Bilbao",
     score: "2 - 0",
     result: "Menang",
