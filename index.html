@@ -51,17 +51,68 @@
   <!-- Main Content Area -->
   <main class="content-area">
     
-  <!-- SECTION 1: OVERVIEW -->
-      <section id="overview" class="tab-content active">
-        <div class="hero-banner" style="
-          background: linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.85) 100%), 
-                      url('https://ibb.co.com/q3244bQH') center/cover no-repeat;
-          border-radius: 20px;
-          padding: 60px 40px;
-          position: relative;
-          overflow: hidden;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        ">
+<!-- SECTION 1: OVERVIEW -->
+<section id="overview" class="tab-content active">
+  <div class="hero-banner">
+    <!-- Isi hero banner di sini -->
+  </div>
+</section>
+
+<style>
+.hero-banner {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.6) 0%,
+      rgba(15, 23, 42, 0.85) 100%
+    ),
+    url("https://ibb.co.com/q3244bQH");
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 350px;
+  width: 100%;
+
+  border-radius: 20px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  box-sizing: border-box;
+}
+
+/* Laptop / Landscape */
+@media (min-width: 769px) {
+  .hero-banner {
+    min-height: 400px;
+    background-position: center center;
+  }
+}
+
+/* HP / Portrait */
+@media (max-width: 768px) {
+  .hero-banner {
+    min-height: 500px;
+    padding: 40px 20px;
+
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 15px;
+  }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+  .hero-banner {
+    min-height: 450px;
+    padding: 30px 15px;
+  }
+}
+</style>
           <div class="hero-content" style="position: relative; z-index: 2;">
             <span class="hero-badge">FC BARCELONA KNOWLEDGE HUB</span>
             <h1>MÉS QUE UN CLUB</h1>
