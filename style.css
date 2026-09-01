@@ -695,3 +695,40 @@ tr.highlight-barca {
   color: #6c7a89;
   line-height: 1.4;
 }
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  padding: 60px 40px;
+  border-radius: 20px;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.92) 0%,
+      rgba(15, 23, 42, 0.75) 40%,
+      rgba(15, 23, 42, 0.45) 100%
+    ),
+    url("https://ibb.co.com/q3244bQH");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+  .hero-banner {
+    min-height: 520px;
+    padding: 40px 25px;
+    background-position: center;
+  }
+}
