@@ -304,15 +304,13 @@ body {
   color: var(--text-muted);
 }
 
-/* --------------------------------------------------
-   HERO BANNER
-   FOTO SQUAD BARCELONA
--------------------------------------------------- */
+/* =========================================
+   HERO BACKGROUND - FOTO SQUAD SAMAR
+========================================= */
 
 .hero-banner {
   position: relative;
   overflow: hidden;
-
   min-height: 400px;
   padding: 48px 40px;
   margin-bottom: 32px;
@@ -323,43 +321,39 @@ body {
   background: #070709;
 }
 
-/* FOTO DI BELAKANG TULISAN */
+/* FOTO */
 .hero-banner::after {
   content: "";
-
   position: absolute;
   inset: 0;
 
   background-image: url("Picsart_26-09-01_22-29-45-429.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
-  opacity: 0.15;
+  opacity: 0.12;
 
   z-index: 0;
 }
 
-/* Lapisan gelap agar foto lebih samar */
+/* OVERLAY GELAP */
 .hero-banner::before {
   content: "";
-
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    180deg,
-    rgba(7, 7, 9, 0.25),
-    rgba(7, 7, 9, 0.75)
-  );
+  background: rgba(7, 7, 9, 0.55);
 
   z-index: 1;
 }
 
-/* TULISAN DI DEPAN FOTO */
+/* TULISAN */
 .hero-content {
   position: relative;
   z-index: 2;
 }
+
 /* --------------------------------------------------
    BUTTONS
 -------------------------------------------------- */
