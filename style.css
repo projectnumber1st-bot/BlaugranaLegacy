@@ -315,20 +315,16 @@ body {
 .hero-banner {
   position: relative;
   overflow: hidden;
-
   border-radius: var(--radius-lg);
+
+  min-height: 400px;
   padding: 48px 40px;
   margin-bottom: 32px;
 
-  min-height: 400px;
-
   border: 1px solid rgba(255, 255, 255, 0.1);
-
-  /* Background gelap dasar */
   background: #070709;
 }
 
-/* FOTO SEBAGAI BACKGROUND */
 .hero-banner::after {
   content: "";
   position: absolute;
@@ -339,29 +335,23 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  /* UBAH ANGKA INI UNTUK OPACITY FOTO */
-  opacity: 0.20;
-
+  opacity: 0.15;
   z-index: 0;
 }
 
-/* LAPISAN GELAP DI ATAS FOTO */
 .hero-banner::before {
   content: "";
   position: absolute;
   inset: 0;
 
-  background: rgba(7, 7, 9, 0.55);
-
+  background: rgba(7, 7, 9, 0.60);
   z-index: 1;
 }
 
-/* TULISAN TETAP DI DEPAN */
 .hero-content {
   position: relative;
   z-index: 2;
 }
-
 .hero-badge {
   display: inline-block;
   color: var(--barca-gold);
