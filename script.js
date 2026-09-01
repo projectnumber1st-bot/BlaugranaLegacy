@@ -25,7 +25,7 @@ const matchData = [
     possessionStr: "71% - 29%",
     shots: "22 - 5",
     fouls: "13 - 6"
-  }
+  },
   {
     id: "m3",
     date: "1 Sep 2026",
