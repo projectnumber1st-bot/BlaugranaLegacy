@@ -9,8 +9,8 @@ const matchData = [
     result: "Menang",
     goals: "FCB: Raphinha 14' (P), 67', Karim Adeyemi 45+3', Fermín López 71', 79'",
     possessionVal: 54,
-    possessionStr: "45.6% - 54.4%",
-    shots: "7 - 11",
+    possessionStr: "46% - 54%",
+    shots: "2 - 7",
     fouls: "13 - 12"
   },
   {
@@ -23,7 +23,7 @@ const matchData = [
     goals: "FCB: Raphinha 37', Fermín López 82'",
     possessionVal: 71,
     possessionStr: "71% - 29%",
-    shots: "22 - 5",
+    shots: "10 - 0",
     fouls: "13 - 6"
   },
   {
