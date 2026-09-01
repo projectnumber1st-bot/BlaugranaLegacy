@@ -304,9 +304,10 @@ body {
   color: var(--text-muted);
 }
 
-/* =========================================
-   HERO BACKGROUND - FOTO SQUAD SAMAR
-========================================= */
+/* --------------------------------------------------
+   HERO BANNER
+   FOTO SQUAD BARCELONA
+-------------------------------------------------- */
 
 .hero-banner {
   position: relative;
@@ -347,8 +348,8 @@ body {
 
   background: linear-gradient(
     180deg,
-    rgba(7, 7, 9, 0.25),
-    rgba(7, 7, 9, 0.75)
+    rgba(7, 7, 9, 0.70),
+    rgba(7, 7, 9, 0.90)
   );
 
   z-index: 1;
@@ -1104,4 +1105,4 @@ tr.highlight-barca {
   .player-detail-grid {
     grid-template-columns: 1fr;
   }
-  }
+           }
