@@ -51,21 +51,29 @@
   <!-- Main Content Area -->
   <main class="content-area">
     
-    <!-- SECTION 1: OVERVIEW -->
-    <section id="overview" class="tab-content active">
-      <div class="hero-banner">
-        <div class="hero-content">
-          <span class="hero-badge">FC BARCELONA KNOWLEDGE HUB</span>
-          <h1>MÉS QUE UN CLUB</h1>
-          <p class="hero-description">
-            Didirikan pada tahun 1899 oleh Joan Gamper, FC Barcelona melambangkan identitas budaya Katalunya dan berdiri sebagai salah satu klub sepak bola paling sukses di dunia.
-          </p>
-          <div class="hero-actions">
-            <button class="btn-primary" onclick="switchTab('matches', document.querySelectorAll('.nav-btn')[3])">Lihat Jadwal Tanding</button>
-            <button class="btn-secondary" onclick="switchTab('squad', document.querySelectorAll('.nav-btn')[2])">Jelajahi Skuad</button>
+  <!-- SECTION 1: OVERVIEW -->
+      <section id="overview" class="tab-content active">
+        <div class="hero-banner" style="
+          background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.92) 100%), 
+                      url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+          border-radius: 20px;
+          padding: 60px 40px;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        ">
+          <div class="hero-content" style="position: relative; z-index: 2;">
+            <span class="hero-badge">FC BARCELONA KNOWLEDGE HUB</span>
+            <h1>MÉS QUE UN CLUB</h1>
+            <p class="hero-description">
+              Didirikan pada tahun 1899 oleh Joan Gamper, FC Barcelona melambangkan identitas budaya Katalunya dan berdiri sebagai salah satu klub sepak bola paling sukses di dunia.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary" onclick="switchTab('matches', document.querySelectorAll('.nav-btn')[3])">Lihat Jadwal Tanding</button>
+              <button class="btn-secondary" onclick="switchTab('squad', document.querySelectorAll('.nav-btn')[2])">Jelajahi Skuad</button>
+            </div>
           </div>
         </div>
-      </div>
 
       <!-- Quick Stats Strip -->
       <div class="quick-stats-strip">
