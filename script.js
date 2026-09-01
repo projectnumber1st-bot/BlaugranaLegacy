@@ -87,39 +87,95 @@ const squadData = [
   { no: 27, name: "Jesse Bisiwu", pos: "RW/LW", country: "🇧🇪 Belgia", type: "fw", age: "18 Thn", height: "-", marketValue: "-", stats: "🌱 0 Laga • Akademi Promosi" },
   { no: 35, name: "Hamza Abdelkarim", pos: "ST/CF", country: "🇪🇬 Mesir", type: "fw", age: "18 Thn", height: "182 cm", marketValue: "€2M", stats: "🌱 0 Laga • Talenta Muda" }
 ];
-// 4. Data Klasemen La Liga (20 Klub)
+// 4. Data Klasemen La Liga 2026/27
+// Update: 1 September 2026
+
 const laLigaTeams = [
-  "Real Madrid", "Atlético Madrid", "Alavés", "FC Barcelona", "Athletic Club",
-  "Villarreal", "Real Betis", "Celta Vigo", "Real Sociedad", "Espanyol",
-  "Getafe", "Levante", "Sevilla", "Rayo Vallecano", "Osasuna",
-  "Valencia", "Mallorca", "Girona", "Deportivo La Coruña", "Málaga"
+  "FC Barcelona",
+  "Real Madrid",
+  "Atlético de Madrid",
+  "Deportivo Alavés",
+  "CA Osasuna",
+  "Sevilla FC",
+  "Real Betis",
+  "RC Deportivo",
+  "Levante UD",
+  "R. Racing Club",
+  "RCD Espanyol de Barcelona",
+  "Athletic Club",
+  "Real Sociedad",
+  "Getafe CF",
+  "Villarreal CF",
+  "Valencia CF",
+  "Celta",
+  "Rayo Vallecano",
+  "Elche CF",
+  "Málaga CF"
 ];
 
 const laLigaStandings = laLigaTeams.map((team, index) => {
   const isBarca = team === "FC Barcelona";
-  
-  // Data statistik spesifik per klub berdasarkan urutan posisi
+
   const stats = [
-    { pld: 3, w: 3, d: 0, l: 0, gf: 9, ga: 1, gd: "+8", pts: 9 }, // 1. Real Madrid
-    { pld: 3, w: 2, d: 1, l: 0, gf: 6, ga: 2, gd: "+4", pts: 7 }, // 2. Atlético Madrid
-    { pld: 3, w: 2, d: 1, l: 0, gf: 5, ga: 1, gd: "+4", pts: 7 }, // 3. Alavés
-    { pld: 2, w: 2, d: 0, l: 0, gf: 7, ga: 0, gd: "+7", pts: 6 }, // 4. FC Barcelona
-    { pld: 3, w: 2, d: 0, l: 1, gf: 5, ga: 2, gd: "+3", pts: 6 }, // 5. Athletic Club
-    { pld: 3, w: 2, d: 0, l: 1, gf: 4, ga: 2, gd: "+2", pts: 6 }, // 6. Villarreal
-    { pld: 3, w: 2, d: 0, l: 1, gf: 3, ga: 2, gd: "+1", pts: 6 }, // 7. Real Betis
-    { pld: 3, w: 1, d: 1, l: 1, gf: 4, ga: 3, gd: "+1", pts: 4 }, // 8. Celta Vigo
-    { pld: 3, w: 1, d: 1, l: 1, gf: 3, ga: 3, gd: "0", pts: 4 },  // 9. Real Sociedad
-    { pld: 3, w: 1, d: 1, l: 1, gf: 2, ga: 2, gd: "0", pts: 4 },  // 10. Espanyol
-    { pld: 2, w: 1, d: 0, l: 1, gf: 2, ga: 2, gd: "0", pts: 3 },  // 11. Getafe
-    { pld: 3, w: 1, d: 0, l: 2, gf: 3, ga: 4, gd: "-1", pts: 3 }, // 12. Levante
-    { pld: 3, w: 1, d: 0, l: 2, gf: 2, ga: 3, gd: "-1", pts: 3 }, // 13. Sevilla
-    { pld: 2, w: 1, d: 0, l: 1, gf: 1, ga: 2, gd: "-1", pts: 3 }, // 14. Rayo Vallecano
-    { pld: 2, w: 0, d: 2, l: 0, gf: 1, ga: 2, gd: "-1", pts: 2 }, // 15. Osasuna
-    { pld: 3, w: 0, d: 2, l: 1, gf: 2, ga: 4, gd: "-2", pts: 2 }, // 16. Valencia
-    { pld: 3, w: 0, d: 1, l: 2, gf: 1, ga: 4, gd: "-3", pts: 1 }, // 17. Mallorca
-    { pld: 3, w: 0, d: 1, l: 2, gf: 2, ga: 6, gd: "-4", pts: 1 }, // 18. Girona
-    { pld: 3, w: 0, d: 1, l: 2, gf: 1, ga: 6, gd: "-5", pts: 1 }, // 19. Deportivo La Coruña
-    { pld: 3, w: 0, d: 0, l: 3, gf: 1, ga: 9, gd: "-8", pts: 0 }  // 20. Málaga
+    // 1. FC Barcelona
+    { pld: 3, w: 3, d: 0, l: 0, gf: 12, ga: 2, gd: "+10", pts: 9 },
+
+    // 2. Real Madrid
+    { pld: 3, w: 3, d: 0, l: 0, gf: 10, ga: 2, gd: "+8", pts: 9 },
+
+    // 3. Atlético de Madrid
+    { pld: 3, w: 2, d: 1, l: 0, gf: 7, ga: 3, gd: "+4", pts: 7 },
+
+    // 4. Deportivo Alavés
+    { pld: 3, w: 2, d: 1, l: 0, gf: 5, ga: 1, gd: "+4", pts: 7 },
+
+    // 5. CA Osasuna
+    { pld: 3, w: 2, d: 1, l: 0, gf: 3, ga: 1, gd: "+2", pts: 7 },
+
+    // 6. Sevilla FC
+    { pld: 3, w: 2, d: 0, l: 1, gf: 6, ga: 5, gd: "+1", pts: 6 },
+
+    // 7. Real Betis
+    { pld: 3, w: 2, d: 0, l: 1, gf: 4, ga: 5, gd: "-1", pts: 6 },
+
+    // 8. RC Deportivo
+    { pld: 3, w: 1, d: 2, l: 0, gf: 5, ga: 3, gd: "+2", pts: 5 },
+
+    // 9. Levante UD
+    { pld: 3, w: 1, d: 1, l: 1, gf: 5, ga: 5, gd: "0", pts: 4 },
+
+    // 10. R. Racing Club
+    { pld: 3, w: 1, d: 1, l: 1, gf: 5, ga: 5, gd: "0", pts: 4 },
+
+    // 11. RCD Espanyol de Barcelona
+    { pld: 3, w: 1, d: 0, l: 2, gf: 5, ga: 4, gd: "+1", pts: 3 },
+
+    // 12. Athletic Club
+    { pld: 3, w: 1, d: 0, l: 2, gf: 3, ga: 5, gd: "-2", pts: 3 },
+
+    // 13. Real Sociedad
+    { pld: 3, w: 1, d: 0, l: 2, gf: 3, ga: 6, gd: "-3", pts: 3 },
+
+    // 14. Getafe CF
+    { pld: 3, w: 1, d: 0, l: 2, gf: 1, ga: 4, gd: "-3", pts: 3 },
+
+    // 15. Villarreal CF
+    { pld: 3, w: 0, d: 2, l: 1, gf: 4, ga: 5, gd: "-1", pts: 2 },
+
+    // 16. Valencia CF
+    { pld: 3, w: 0, d: 1, l: 2, gf: 1, ga: 4, gd: "-3", pts: 1 },
+
+    // 17. Celta
+    { pld: 3, w: 0, d: 1, l: 2, gf: 1, ga: 4, gd: "-3", pts: 1 },
+
+    // 18. Rayo Vallecano
+    { pld: 3, w: 0, d: 1, l: 2, gf: 4, ga: 8, gd: "-4", pts: 1 },
+
+    // 19. Elche CF
+    { pld: 3, w: 0, d: 1, l: 2, gf: 3, ga: 9, gd: "-6", pts: 1 },
+
+    // 20. Málaga CF
+    { pld: 3, w: 0, d: 1, l: 2, gf: 1, ga: 7, gd: "-6", pts: 1 }
   ];
 
   return {
