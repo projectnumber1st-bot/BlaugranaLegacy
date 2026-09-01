@@ -44,13 +44,6 @@ const matchData = [
 // 2. Data Jadwal Pertandingan Mendatang
 const upcomingMatches = [
   {
-    date: "1 Sep 2026",
-    time: "02:30 WIB",
-    competition: "La Liga (Pekan 3)",
-    match: "FC Barcelona vs Rayo Vallecano",
-    venue: "Spotify Camp Nou"
-  },
-  {
     date: "6 Sep 2026",
     time: "21:15 WIB",
     competition: "La Liga (Pekan 4)",
@@ -63,6 +56,13 @@ const upcomingMatches = [
     competition: "UEFA Champions League",
     match: "FC Barcelona vs Feyenoord",
     venue: "Spotify Camp Nou"
+  },
+   {
+    date: "13 Sep 2026",
+    time: "21:15 WIB",
+    competition: "La Liga (Pekan 5)",
+    match: "Levante vs FC Barcelona",
+    venue: "Estadio Ciudad de Valencia"
   }
 ];
 // 3. Data Skuad Pemain FC Barcelona (Statistik Utama Rapi)
