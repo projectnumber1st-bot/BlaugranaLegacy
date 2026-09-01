@@ -26,6 +26,19 @@ const matchData = [
     shots: "22 - 5",
     fouls: "13 - 6"
   }
+  {
+    id: "m3",
+    date: "1 Sep 2026",
+    competition: "La Liga (Pekan 3)",
+    match: "FC Barcelona vs Rayo Vallecano",
+    score: "5 - 2",
+    result: "Menang",
+    goals: "FCB: Raphinha 19', 71', Lamine Yamal 21', 90', Florian Lejeune OG 51', | RAY: Sergio Camello 12', 59'",
+    possessionVal: 68,
+    possessionStr: "68% - 32%",
+    shots: "26 - 11",
+    fouls: "5 - 11"
+}
 ];
 
 // 2. Data Jadwal Pertandingan Mendatang
