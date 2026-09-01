@@ -686,18 +686,21 @@ tr.highlight-barca {
 }
 
 footer {
-  width: 100%;
-  padding: 15px 20px;
-  background-color: #081225;
-  text-align: center;
-  margin-top: 40px;
-  position: relative;
-  z-index: 1;
+  position: relative !important;
+  clear: both !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: initial !important;
+  padding: 20px !important;
+  background-color: #070e1b !important;
+  text-align: center !important;
+  margin-top: 50px !important;
+  z-index: 10 !important;
 }
 
 .disclaimer-text {
-  font-size: 11px;
-  color: #888888;
-  margin: 0;
-  line-height: 1.4;
+  font-size: 11px !important;
+  color: #718096 !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
 }
