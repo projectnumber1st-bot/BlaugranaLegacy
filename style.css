@@ -688,14 +688,16 @@ tr.highlight-barca {
 footer {
   width: 100%;
   padding: 15px 20px;
-  background-color: #0b1a30; /* Sesuaikan warna latar belakang agar serasi dengan tema web kamu */
+  background-color: #081225;
   text-align: center;
-  box-sizing: border-box;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .disclaimer-text {
-  font-size: 12px;
-  color: #888888; /* Warna abu-abu halus agar tidak terlalu mencolok */
+  font-size: 11px;
+  color: #888888;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
 }
