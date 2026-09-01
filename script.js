@@ -36,7 +36,7 @@ const matchData = [
     goals: "FCB: Raphinha 19', 71', Lamine Yamal 21', 90', Florian Lejeune OG 51' | RAY: Sergio Camello 12', 59'",
     possessionVal: 68,
     possessionStr: "68% - 32%",
-    shots: "26 - 11",
+    shots: "9 - 5",
     fouls: "4 - 11"
 }
 ];
