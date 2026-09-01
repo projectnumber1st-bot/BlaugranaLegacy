@@ -1090,9 +1090,19 @@ tr.highlight-barca {
     padding: 8px 14px;
   }
 
-  .sidebar-footer {
-    display: none;
-  }
+ .sidebar-footer {
+  display: block;
+  padding: 15px 5px 5px;
+  margin-top: 15px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.disclaimer-text {
+  font-size: 9px;
+  color: #6c7a89;
+  line-height: 1.4;
+  margin-top: 8px;
+}
 
   .content-area {
     padding: 24px 20px;
