@@ -38,18 +38,24 @@ const matchData = [
     possessionStr: "68% - 32%",
     shots: "9 - 5",
     fouls: "4 - 11"
+},
+  {
+    id: "m4",
+    date: "6 Sep 2026",
+    competition: "La Liga (Pekan 4)",
+    match: "Valencia vs FC Barcelona",
+    score: "0 - 5",
+    result: "Menang",
+    goals: "FCB: Lamine Yamal 6', 84', Lopez 22', Raphinha 50', Pedri 79'",
+    possessionVal: 74,
+    possessionStr: "26% - 74%",
+    shots: "2 - 10",
+    fouls: "7 - 6"
 }
 ];
 
 // 2. Data Jadwal Pertandingan Mendatang
 const upcomingMatches = [
-  {
-    date: "6 Sep 2026",
-    time: "21:15 WIB",
-    competition: "La Liga (Pekan 4)",
-    match: "Valencia vs FC Barcelona",
-    venue: "Estadio de Mestalla"
-  },
   {
     date: "9 Sep 2026",
     time: "23:45 WIB",
@@ -63,7 +69,14 @@ const upcomingMatches = [
     competition: "La Liga (Pekan 5)",
     match: "Levante vs FC Barcelona",
     venue: "Estadio Ciudad de Valencia"
-  }
+  },
+     {
+    date: "17 Sep 2026",
+    time: "02:30 WIB",
+    competition: "La Liga (Pekan 6)",
+    match: "FC Barcelona vs Racing Santander",
+    venue: "Spotify Camp Nou"
+     }
 ];
 // 3. Data Skuad Pemain FC Barcelona (Statistik Utama Rapi)
 const squadData = [
