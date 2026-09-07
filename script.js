@@ -111,7 +111,8 @@ const squadData = [
   { no: 17, name: "Anthony Gordon", pos: "LW/RW", country: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inggris", type: "fw", age: "25 Thn", height: "183 cm", marketValue: "€65M", stats: "🅰️ 2 Assist • 2 Laga" },
   { no: 19, name: "Roony Bardghji", pos: "RW", country: "🇸🇪 Swedia", type: "fw", age: "20 Thn", height: "173 cm", marketValue: "€15M", stats: "⚡ 0 Laga • Rekrutan Baru" },
   { no: 27, name: "Jesse Bisiwu", pos: "RW/LW", country: "🇧🇪 Belgia", type: "fw", age: "18 Thn", height: "-", marketValue: "-", stats: "🌱 0 Laga • Akademi Promosi" },
-  { no: 35, name: "Hamza Abdelkarim", pos: "ST/CF", country: "🇪🇬 Mesir", type: "fw", age: "18 Thn", height: "182 cm", marketValue: "€2M", stats: "🌱 0 Laga • Talenta Muda" }
+  { no: 35, name: "Hamza Abdelkarim", pos: "ST/CF", country: "🇪🇬 Mesir", type: "fw", age: "18 Thn", height: "182 cm", marketValue: "€2M", stats: "🌱 1 Laga • Talenta Muda" },
+  { no: 9, name: "Gabriel Jesus", pos: "ST/CF/LW", country: "🇧🇷 Brasil", type: "fw", age: "29 Thn", height: "175 cm", marketValue: "€10M", stats: "⚽ 1 Laga • Rekrutan Baru" }
 ];
 // 4. Data Klasemen La Liga 2026/27
 // Update: 1 September 2026
