@@ -128,7 +128,8 @@ const squadData = [
   { no: 9, name: "Gabriel Jesus", pos: "ST/CF/LW", country: "🇧🇷 Brasil", type: "fw", age: "29 Thn", height: "175 cm", marketValue: "€10M", stats: "⚽ 1 Laga • Rekrutan Baru" }
 ];
 // 4. Data Klasemen La Liga 2026/27
-// Update: 7 September 2026
+// Update: 11 September 2026
+// Klasemen terakhir sebelum pertandingan Pekan 5 dimulai
 
 const laLigaTeams = [
   "FC Barcelona",
@@ -139,15 +140,15 @@ const laLigaTeams = [
   "Sevilla FC",
   "Atlético de Madrid",
   "CA Osasuna",
+  "Real Sociedad",
   "Athletic Club",
   "Levante UD",
   "RCD Espanyol de Barcelona",
   "R. Racing Club",
   "Rayo Vallecano",
-  "Real Sociedad",
   "Getafe CF",
-  "Villarreal CF",
   "Celta",
+  "Villarreal CF",
   "Málaga CF",
   "Elche CF",
   "Valencia CF"
@@ -181,38 +182,38 @@ const laLigaStandings = laLigaTeams.map((team, index) => {
     // 8. CA Osasuna
     { pld: 4, w: 2, d: 1, l: 1, gf: 5, ga: 6, gd: "-1", pts: 7 },
 
-    // 9. Athletic Club
+    // 9. Real Sociedad
+    { pld: 5, w: 2, d: 1, l: 2, gf: 6, ga: 8, gd: "-2", pts: 7 },
+
+    // 10. Athletic Club
     { pld: 4, w: 2, d: 0, l: 2, gf: 6, ga: 5, gd: "+1", pts: 6 },
 
-    // 10. Levante UD
+    // 11. Levante UD
     { pld: 4, w: 1, d: 2, l: 1, gf: 5, ga: 5, gd: "0", pts: 5 },
 
-    // 11. RCD Espanyol de Barcelona
+    // 12. RCD Espanyol de Barcelona
     { pld: 4, w: 1, d: 1, l: 2, gf: 6, ga: 5, gd: "+1", pts: 4 },
 
-    // 12. R. Racing Club
+    // 13. R. Racing Club
     { pld: 4, w: 1, d: 1, l: 2, gf: 7, ga: 8, gd: "-1", pts: 4 },
 
-    // 13. Rayo Vallecano
+    // 14. Rayo Vallecano
     { pld: 4, w: 1, d: 1, l: 2, gf: 7, ga: 10, gd: "-3", pts: 4 },
 
-    // 14. Real Sociedad
-    { pld: 4, w: 1, d: 1, l: 2, gf: 3, ga: 6, gd: "-3", pts: 4 },
-
     // 15. Getafe CF
-    { pld: 3, w: 1, d: 0, l: 2, gf: 1, ga: 4, gd: "-3", pts: 3 },
+    { pld: 4, w: 1, d: 1, l: 2, gf: 2, ga: 5, gd: "-3", pts: 4 },
 
-    // 16. Villarreal CF
+    // 16. Celta
+    { pld: 5, w: 0, d: 3, l: 2, gf: 2, ga: 5, gd: "-3", pts: 3 },
+
+    // 17. Villarreal CF
     { pld: 4, w: 0, d: 2, l: 2, gf: 6, ga: 8, gd: "-2", pts: 2 },
-
-    // 17. Celta
-    { pld: 4, w: 0, d: 2, l: 2, gf: 1, ga: 4, gd: "-3", pts: 2 },
 
     // 18. Málaga CF
     { pld: 4, w: 0, d: 2, l: 2, gf: 1, ga: 7, gd: "-6", pts: 2 },
 
     // 19. Elche CF
-    { pld: 3, w: 0, d: 1, l: 2, gf: 3, ga: 9, gd: "-6", pts: 1 },
+    { pld: 4, w: 0, d: 1, l: 3, gf: 5, ga: 12, gd: "-7", pts: 1 },
 
     // 20. Valencia CF
     { pld: 4, w: 0, d: 1, l: 3, gf: 1, ga: 9, gd: "-8", pts: 1 }
@@ -233,30 +234,174 @@ const laLigaStandings = laLigaTeams.map((team, index) => {
   };
 });
 
-// 5. Data Klasemen UCL League Phase (36 Klub)
+
+// 5. Data Klasemen UCL League Phase 2026/27
+// Update: 11 September 2026
+// Matchday 1 selesai
+
 const uclTeams = [
-  "Paris Saint-Germain", "Bayern München", "Real Madrid", "Liverpool", "Inter",
-  "Manchester City", "Arsenal", "FC Barcelona", "Atlético Madrid", "Borussia Dortmund",
-  "Roma", "Sporting CP", "Aston Villa", "Porto", "Manchester United",
-  "Club Brugge", "Real Betis", "PSV Eindhoven", "Feyenoord", "Lille",
-  "Bodø/Glimt", "Napoli", "RB Leipzig", "Villarreal", "Fenerbahçe",
-  "Shakhtar Donetsk", "Galatasaray", "AEK Athens", "Como", "LASK",
-  "Lens", "Slovan Bratislava", "Slavia Praha", "—————————", "—————————", "—————————"
+  "Paris Saint-Germain",
+  "Bayern München",
+  "FC Barcelona",
+  "Manchester United",
+  "Como",
+  "Sporting CP",
+  "VfB Stuttgart",
+  "Manchester City",
+  "Aston Villa",
+  "Borussia Dortmund",
+  "Lens",
+  "Real Betis",
+  "Liverpool",
+  "Real Madrid",
+  "AEK Athens",
+  "Arsenal",
+  "Fenerbahçe",
+  "PSV Eindhoven",
+  "Roma",
+  "Shakhtar Donetsk",
+  "Club Brugge",
+  "Lille",
+  "Slavia Praha",
+  "Villarreal",
+  "Atlético Madrid",
+  "Inter",
+  "LASK",
+  "Napoli",
+  "Galatasaray",
+  "Viking",
+  "Porto",
+  "RB Leipzig",
+  "Feyenoord",
+  "Sabah",
+  "Slovan Bratislava",
+  "Bodø/Glimt"
 ];
 
 const uclStandings = uclTeams.map((team, index) => {
   const isBarca = team === "FC Barcelona";
+
+  const stats = [
+    // 1. PSG
+    { pld: 1, w: 1, d: 0, l: 0, gf: 6, ga: 1, gd: "+5", pts: 3 },
+
+    // 2. Bayern München
+    { pld: 1, w: 1, d: 0, l: 0, gf: 5, ga: 0, gd: "+5", pts: 3 },
+
+    // 3. FC Barcelona
+    { pld: 1, w: 1, d: 0, l: 0, gf: 5, ga: 1, gd: "+4", pts: 3 },
+
+    // 4. Manchester United
+    { pld: 1, w: 1, d: 0, l: 0, gf: 4, ga: 0, gd: "+4", pts: 3 },
+
+    // 5. Como
+    { pld: 1, w: 1, d: 0, l: 0, gf: 4, ga: 1, gd: "+3", pts: 3 },
+
+    // 6. Sporting CP
+    { pld: 1, w: 1, d: 0, l: 0, gf: 3, ga: 1, gd: "+2", pts: 3 },
+
+    // 7. VfB Stuttgart
+    { pld: 1, w: 1, d: 0, l: 0, gf: 3, ga: 1, gd: "+2", pts: 3 },
+
+    // 8. Manchester City
+    { pld: 1, w: 1, d: 0, l: 0, gf: 2, ga: 0, gd: "+2", pts: 3 },
+
+    // 9. Aston Villa
+    { pld: 1, w: 1, d: 0, l: 0, gf: 3, ga: 2, gd: "+1", pts: 3 },
+
+    // 10. Borussia Dortmund
+    { pld: 1, w: 1, d: 0, l: 0, gf: 3, ga: 2, gd: "+1", pts: 3 },
+
+    // 11. Lens
+    { pld: 1, w: 1, d: 0, l: 0, gf: 3, ga: 2, gd: "+1", pts: 3 },
+
+    // 12. Real Betis
+    { pld: 1, w: 1, d: 0, l: 0, gf: 3, ga: 2, gd: "+1", pts: 3 },
+
+    // 13. Liverpool
+    { pld: 1, w: 1, d: 0, l: 0, gf: 2, ga: 1, gd: "+1", pts: 3 },
+
+    // 14. Real Madrid
+    { pld: 1, w: 1, d: 0, l: 0, gf: 2, ga: 1, gd: "+1", pts: 3 },
+
+    // 15. AEK Athens
+    { pld: 1, w: 1, d: 0, l: 0, gf: 1, ga: 0, gd: "+1", pts: 3 },
+
+    // 16. Arsenal
+    { pld: 1, w: 1, d: 0, l: 0, gf: 1, ga: 0, gd: "+1", pts: 3 },
+
+    // 17. Fenerbahçe
+    { pld: 1, w: 0, d: 1, l: 0, gf: 1, ga: 1, gd: "0", pts: 1 },
+
+    // 18. PSV Eindhoven
+    { pld: 1, w: 0, d: 1, l: 0, gf: 1, ga: 1, gd: "0", pts: 1 },
+
+    // 19. Roma
+    { pld: 1, w: 0, d: 1, l: 0, gf: 1, ga: 1, gd: "0", pts: 1 },
+
+    // 20. Shakhtar Donetsk
+    { pld: 1, w: 0, d: 1, l: 0, gf: 1, ga: 1, gd: "0", pts: 1 },
+
+    // 21. Club Brugge
+    { pld: 1, w: 0, d: 0, l: 1, gf: 2, ga: 3, gd: "-1", pts: 0 },
+
+    // 22. Lille
+    { pld: 1, w: 0, d: 0, l: 1, gf: 2, ga: 3, gd: "-1", pts: 0 },
+
+    // 23. Slavia Praha
+    { pld: 1, w: 0, d: 0, l: 1, gf: 2, ga: 3, gd: "-1", pts: 0 },
+
+    // 24. Villarreal
+    { pld: 1, w: 0, d: 0, l: 1, gf: 2, ga: 3, gd: "-1", pts: 0 },
+
+    // 25. Atlético Madrid
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 2, gd: "-1", pts: 0 },
+
+    // 26. Inter
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 2, gd: "-1", pts: 0 },
+
+    // 27. LASK
+    { pld: 1, w: 0, d: 0, l: 1, gf: 0, ga: 1, gd: "-1", pts: 0 },
+
+    // 28. Napoli
+    { pld: 1, w: 0, d: 0, l: 1, gf: 0, ga: 1, gd: "-1", pts: 0 },
+
+    // 29. Galatasaray
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 3, gd: "-2", pts: 0 },
+
+    // 30. Viking
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 3, gd: "-2", pts: 0 },
+
+    // 31. Porto
+    { pld: 1, w: 0, d: 0, l: 1, gf: 0, ga: 2, gd: "-2", pts: 0 },
+
+    // 32. RB Leipzig
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 4, gd: "-3", pts: 0 },
+
+    // 33. Feyenoord
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 5, gd: "-4", pts: 0 },
+
+    // 34. Sabah
+    { pld: 1, w: 0, d: 0, l: 1, gf: 0, ga: 4, gd: "-4", pts: 0 },
+
+    // 35. Slovan Bratislava
+    { pld: 1, w: 0, d: 0, l: 1, gf: 1, ga: 6, gd: "-5", pts: 0 },
+
+    // 36. Bodø/Glimt
+    { pld: 1, w: 0, d: 0, l: 1, gf: 0, ga: 5, gd: "-5", pts: 0 }
+  ];
+
   return {
     pos: index + 1,
     team: team,
-    pld: 0,
-    w: 0,
-    d: 0,
-    l: 0,
-    gf: 0,
-    ga: 0,
-    gd: "0",
-    pts: 0,
+    pld: stats[index].pld,
+    w: stats[index].w,
+    d: stats[index].d,
+    l: stats[index].l,
+    gf: stats[index].gf,
+    ga: stats[index].ga,
+    gd: stats[index].gd,
+    pts: stats[index].pts,
     isBarca: isBarca
   };
 });
