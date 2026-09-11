@@ -51,18 +51,24 @@ const matchData = [
     possessionStr: "26% - 74%",
     shots: "2 - 10",
     fouls: "7 - 6"
+},
+  {
+    id: "m5",
+    date: "9 Sep 2026",
+    competition: "UEFA Champions League",
+    match: "FC Barcelona vs Feyenoord",
+    score: "5 - 1",
+    result: "Menang",
+    goals: "FCB: Raphinha 3', 57', Karim Adeyemi 22', Lamine Yamal 77', Gabriel Jesus 85' | FEY: Sem Steijn 82'",
+    possessionVal: 72,
+    possessionStr: "72% - 28%",
+    shots: "9 - 2",
+    fouls: "10 - 12"
 }
 ];
 
 // 2. Data Jadwal Pertandingan Mendatang
 const upcomingMatches = [
-  {
-    date: "9 Sep 2026",
-    time: "23:45 WIB",
-    competition: "UEFA Champions League",
-    match: "FC Barcelona vs Feyenoord",
-    venue: "Spotify Camp Nou"
-  },
    {
     date: "13 Sep 2026",
     time: "21:15 WIB",
@@ -76,7 +82,14 @@ const upcomingMatches = [
     competition: "La Liga (Pekan 6)",
     match: "FC Barcelona vs Racing Santander",
     venue: "Spotify Camp Nou"
-     }
+     },
+  {
+  date: "20 Sep 2026",
+  time: "02:00 WIB",
+  competition: "La Liga (Pekan 7)",
+  match: "Sevilla FC vs FC Barcelona",
+  venue: "Ramón Sánchez-Pizjuán"
+  }
 ];
 // 3. Data Skuad Pemain FC Barcelona (Statistik Utama Rapi)
 const squadData = [
