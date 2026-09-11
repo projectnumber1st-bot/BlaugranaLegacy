@@ -46,7 +46,7 @@ const matchData = [
     match: "Valencia vs FC Barcelona",
     score: "0 - 5",
     result: "Menang",
-    goals: "FCB: Lamine Yamal 6', 84', Lopez 22', Raphinha 50', Pedri 79'",
+    goals: "FCB: Lamine Yamal 6', 84', Fermín López 22', Raphinha 50', Pedri 79'",
     possessionVal: 74,
     possessionStr: "26% - 74%",
     shots: "2 - 10",
