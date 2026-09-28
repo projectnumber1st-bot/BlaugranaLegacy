@@ -64,31 +64,70 @@ const matchData = [
     possessionStr: "72% - 28%",
     shots: "9 - 2",
     fouls: "10 - 12"
-}
+},
+    {
+    id: "m6",
+    date: "13 Sep 2026",
+    competition: "La Liga (Pekan 5)",
+    match: "Levante vs FC Barcelona",
+    score: "2 - 4",
+    result: "Menang",
+    goals: "FCB: Xavi Espart 5', Lamine Yamal 19', 48' (P), Karim Adeyemi 90+3' | LEV: Iván Romero 79', Roger Brugué 88'",
+    possessionVal: 75,
+    possessionStr: "25% - 75%",
+    shots: "6 - 5",
+    fouls: "11 - 11"
+  },
+  {
+    id: "m7",
+    date: "16 Sep 2026",
+    competition: "La Liga (Pekan 6)",
+    match: "FC Barcelona vs Racing Santander",
+    score: "7 - 2",
+    result: "Menang",
+    goals: "FCB: João Cancelo 8', Raphinha 25' (P), 42', 67' (P), Asier Villalibre OG 36', Gabriel Jesus 79', Lamine Yamal 89' | RAC: Maguette Gueye 30', Yassir Zabiri 65'",
+    possessionVal: 69,
+    possessionStr: "69% - 31%",
+    shots: "16 - 2",
+    fouls: "13 - 3"
+  },
+  {
+    id: "m8",
+    date: "19 Sep 2026",
+    competition: "La Liga (Pekan 7)",
+    match: "Sevilla FC vs FC Barcelona",
+    score: "1 - 3",
+    result: "Menang",
+    goals: "FCB: Raphinha 22', 52', 69' | SEV: Youssouf Fofana 19'",
+    possessionVal: 69,
+    possessionStr: "31% - 69%",
+    shots: "3 - 9",
+    fouls: "10 - 11"
+  }
 ];
 
 // 2. Data Jadwal Pertandingan Mendatang
 const upcomingMatches = [
-   {
-    date: "13 Sep 2026",
-    time: "21:15 WIB",
-    competition: "La Liga (Pekan 5)",
-    match: "Levante vs FC Barcelona",
-    venue: "Estadio Ciudad de Valencia"
-  },
-     {
-    date: "17 Sep 2026",
-    time: "02:30 WIB",
-    competition: "La Liga (Pekan 6)",
-    match: "FC Barcelona vs Racing Santander",
-    venue: "Spotify Camp Nou"
-     },
   {
-  date: "20 Sep 2026",
-  time: "02:00 WIB",
-  competition: "La Liga (Pekan 7)",
-  match: "Sevilla FC vs FC Barcelona",
-  venue: "Ramón Sánchez-Pizjuán"
+    date: "10 Oct 2026",
+    time: "23:30 WIB",
+    competition: "La Liga (Pekan 8)",
+    match: "FC Barcelona vs Getafe",
+    venue: "Spotify Camp Nou"
+  },
+  {
+    date: "14 Oct 2026",
+    time: "02:00 WIB",
+    competition: "UEFA Champions League (Matchday 2)",
+    match: "Galatasaray vs FC Barcelona",
+    venue: "RAMS Park"
+  },
+  {
+    date: "17 Oct 2026",
+    time: "23:30 WIB",
+    competition: "La Liga (Pekan 9)",
+    match: "Real Betis vs FC Barcelona",
+    venue: "Estadio La Cartuja de Sevilla"
   }
 ];
 // 3. Data Skuad Pemain FC Barcelona (Statistik Utama Rapi)
